@@ -2,6 +2,6 @@ applications:
   - name: weather-app
 memory: 64M
 path: build/
-buildpack: staticfile_buildpack
+buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
 routes:
   - route: weather-app.eu-gb.server.cf.appdomain.cloud
