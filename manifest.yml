@@ -1,4 +1,5 @@
 applications:
   - name: weather-app
-    random-route: true
-    memory: 64M
+memory: 64M
+path: build/
+buildpack: staticfile_buildpack
