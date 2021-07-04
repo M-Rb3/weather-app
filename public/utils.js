@@ -2,14 +2,14 @@ const api_key = "994462fe818ec2383a1f5e5da2a2455b";
 getWeatherdata();
 function getWeatherdata() {
   navigator.geolocation.getCurrentPosition((success) => {
-    console.log(success);
+    // console.log(success);
     let { latitude, longitude } = success.coords;
     fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${api_key}`
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         showData(data);
       });
   });

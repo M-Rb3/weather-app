@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import Moment from "react-moment";
-
+import { Form, FormControl, Button } from "react-bootstrap";
 const CurrentInfo = () => {
   return (
     <div className="container">
@@ -42,6 +42,19 @@ const CurrentInfo = () => {
           <div className="country" id="country">
             IN
           </div>
+        </div>
+        <div>
+          <Form className='class="input-group-prepend' id="form1" inline>
+            <FormControl
+              type="text"
+              placeholder="Search"
+              className="mr-sm-2"
+              id="form-country"
+            />
+            <Button type="submit" variant="secondary">
+              Search
+            </Button>
+          </Form>
         </div>
       </div>
     </div>

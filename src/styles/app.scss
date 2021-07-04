@@ -112,7 +112,7 @@ body {
     align-items: none;
     overflow-x: scroll;
   }
-  @media only screen and (max-height: 600px) {
+  @media only screen and (max-height: 780px) {
     position: relative;
   }
   .weather-forecast {
@@ -160,4 +160,7 @@ body {
       white-space: nowrap;
     }
   }
+}
+.form-inline {
+  flex-flow: unset;
 }
