@@ -1,7 +1,7 @@
 applications:
-  - name: react-weather-app
+  - name: react-weather
 memory: 64M
 path: build/
 buildpack: staticfile_buildpack
 routes:
-  - route: route.server.cf.appdomain.cloud
+  - route: weather-app.eu-gb.server.cf.appdomain.cloud
