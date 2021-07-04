@@ -1,5 +1,5 @@
 applications:
-  - name: react-weather
+  - name: weather-app
 memory: 64M
 path: build/
 buildpack: staticfile_buildpack
